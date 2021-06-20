@@ -1,0 +1,29 @@
+{
+  "name": "fahad/testpackage",
+  "description": "A test package",
+  "type": "library",
+  "homepage": "https://github.com/skfahad/fahad-testpackage.git",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fahad Shaikh",
+      "email": "fahad.shaikh301@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Fahad\\TestPackage\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Fahad\\TestPackage\\TestPackageServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0"
+  },
+  "minimum-stability": "dev"
+}
